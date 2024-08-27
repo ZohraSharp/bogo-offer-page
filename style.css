@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff4b5c;
+    margin-bottom: 20px;
+}
+
+.offer-options {
+    margin-bottom: 20px;
+}
+
+.offer-option {
+    display: block;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.offer-option input[type="radio"] {
+    display: none;
+}
+
+.offer-option:hover {
+    border-color: #ff4b5c;
+}
+
+.offer-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.discount-tag {
+    background-color: #ff4b5c;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.offer-info p {
+    margin: 0;
+    text-align: left;
+}
+
+.popular {
+    background-color: #ffa502;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.expanded-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 14px;
+}
+
+.selections {
+    display: flex;
+    justify-content: space-between;
+}
+
+.selection {
+    text-align: left;
+}
+
+label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.delivery {
+    color: #ff4b5c;
+    font-size: 14px;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #ffcf43;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ffb01c;
+}
+
+.powered-by {
+    font-size: 12px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Styles to show the expanded content when the radio is checked */
+.offer-option input[type="radio"]:checked ~ .expanded-content {
+    display: block;
+}
